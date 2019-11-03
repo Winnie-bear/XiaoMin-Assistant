@@ -1,0 +1,28 @@
+<!--pages/cs/index.wxml-->
+<view class='wrapper'>
+  <scroll-view scroll-y="true" style="height:1000rpx;">
+    <ul class="chat-area">
+      <li>
+        <image src='../../images/logo.png'></image>
+        <text class='left-chat-bubble'>Hi，我是小民，很高兴为您服务~</text>
+      </li>
+      <block wx:for="{{chatLog}}" wx:key="time">
+        <li class='right-chat-bubble'>
+          <span>{{item.time}}</span>
+          <text>{{item.oldProblem}}</text>
+        </li>
+        <li class='left-chat-bubble' wx:if="{{item.judge==='1'}}">
+          <text wx:for="{{item.problem}}" wx:for-item="itemPro" wx:key="itemPro" >{{itemPro}}</text>
+        </li>
+        <li class='left-chat-bubble' wx:else>
+          <text>换一种问法，或许会有答案哟~</text>
+          <text>或者去 <text class='emphasize'>我要提问</text></text>
+        </li>
+      </block>
+    </ul>
+  </scroll-view>
+  <view class='fixed-input'>
+    <input type='text' placeholder='请输入问题' value="{{problem}}" placeholder-style="color:#B2B2B2;font-size:0.8rem" bindblur="getProblem"></input>
+    <button bindtap="send">发送</button>
+  </view>
+</view>

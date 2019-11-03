@@ -1,0 +1,23 @@
+<!--pages/home/classify/classify.wxml-->
+<view class='wrapper'>
+  <scroll-view scroll-x style='width:100vw;height:320rpx;'>
+    <view class='scroll-container'>
+      <view wx:for="{{category}}" wx:key="item.ID" class='classify-item'>
+        <image src="{{item.url}}"></image>
+        <text>{{item.category}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='hotspot'>
+    <view class='hotspot-top'>
+      <image src='../../../images/hotspot-cs.png'></image>
+      <text>热点关注</text>
+    </view>
+    <ul class='pro-list'>
+      <li wx:for="{{proList}}" wx:key="{{item.problem}}">
+        <text>{{item.problem}}</text>
+      </li>
+    </ul>
+    <text class="show-more" bindtap='getMorePro'>显示更多</text>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/home/index/index.wxml-->
+<view class='wrapper'>
+  <view class='top-bar'>
+    <image src="../../../images/logo.png"></image>
+    <view class='top-bar-guide'>
+      <p>Hi~亲爱的{{userName}}</p>
+      <text>小民猜你想找这些内容哦~</text>
+    </view>
+  </view>
+  <view class='barrage'>
+    <block wx:for="{{doomData}}" wx:key="problemID">
+      <view >
+        <text class="barrage-item" style="animation:move {{item.duration}}s linear infinite forwards;top:{{item.top}}%;color:{{item.color}}">
+          {{item.trueProblem}}
+        </text>
+      </view>
+    </block>
+  </view>
+  <view class='classify'>
+    <view wx:for="{{category}}" wx:key="{{item.ID}}" class='classify-item'>
+      <image src="{{item.url}}" data-num="{{index+1}}" bindtap='navigateToClassify'></image>
+      <text>{{item.category}}</text>
+    </view>
+  </view>
+</view>

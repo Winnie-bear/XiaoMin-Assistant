@@ -1,0 +1,19 @@
+<!--pages/mine/question/question.wxml-->
+<view>
+  <view class='top-bar'>
+    <text> 您可以在此提问暂时没有找到答案的问题，有答案会第一时间通知您哦~</text>
+    <button>我要提问</button>
+  </view>
+  
+  <ul class="question-area">
+    <li wx:for="{{questionList}}">
+      <view class='question'>
+        <text></text>
+        <span></span>
+      </view>
+      <view class='answer'>
+        <text></text>
+      </view>
+    </li>
+  </ul>
+</view>

@@ -1,0 +1,85 @@
+/* pages/mine/index/index.wxss */
+
+.waterwave {
+  position: relative;
+  width: 100vw;
+  height: 390rpx;
+}
+
+.waterwave image {
+  width: 2000rpx;
+  height: 380rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0;
+  animation: move 10s linear infinite alternate;
+  /* z-index: -1; */
+}
+
+@keyframes move {
+  from {
+    transform: translate(0%,-4%);
+  }
+  40% {
+    transform: translate(-20%,-10%);
+  }
+
+  60% {
+    transform: translate(-30%,0%);
+  }
+
+  80% {
+    transform: translate(-45%,-6%);
+  }
+
+  to {
+    transform: translate(-60%,0%);
+  }
+}
+
+.user-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 30rpx;
+  left: 0;
+  color: #F5F5F5;
+}
+.avatar {
+  width: 180rpx;
+  height: 180rpx;
+  margin:40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 20rpx rgba(67, 67, 67, 0.45);
+}
+
+.avatar image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+
+.options {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.options-row {
+  display: flex;
+  padding: 20rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.options-row image {
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,38 @@
+<!--pages/mine/index/index.wxml-->
+<view class='wrapper'>
+  <view class="userinfo-bar">
+    <view class='waterwave'>
+      <image src='../../../images/waterwave.png'></image>
+    </view>
+    <view class='user-info'>
+      <view class='avatar'>
+        <image src='{{avatarUrl}}'></image>
+      </view>
+      <view>
+        <text>{{userName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='options'>
+    <view class='options-row'>
+      <text>对我有用</text>
+      <image src='../../../images/right.png'></image>
+    </view>
+    <view class='options-row'>
+      <text>我的提问</text>
+      <image src='../../../images/right.png'></image>
+    </view>
+    <view class='options-row'>
+      <text>设置</text>
+      <image src='../../../images/right.png'></image>
+    </view>
+    <view class='options-row'>
+      <text>分享小程序</text>
+      <image src='../../../images/right.png'></image>
+    </view>
+    <view class='options-row'>
+      <text>关于</text>
+      <image src='../../../images/right.png'></image>
+    </view>
+  </view>
+</view>

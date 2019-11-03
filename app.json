@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/mine/question/question",
+    "pages/authorize/authorize",
+    "pages/mine/index/index",
+    "pages/home/index/index",
+    "pages/home/classify/classify",
+    "pages/cs/index",
+    "pages/mine/useful/useful"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "民大助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#5792FE",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-click.png"
+      },
+      {
+        "pagePath": "pages/cs/index",
+        "text": "客服",
+        "iconPath": "images/cs.png",
+        "selectedIconPath": "images/cs-click.png"
+      },
+      {
+        "pagePath": "pages/mine/index/index",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-click.png"
+      }
+    ]
+  }
+}

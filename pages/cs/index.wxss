@@ -1,0 +1,99 @@
+/* pages/cs/index.wxss */
+.chat-area{
+  display: flex;
+  flex-direction: column;
+}
+.chat-area li:nth-of-type(1){
+  height:180rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #222222;
+  font-size: 0.8rem;
+}
+.chat-area li:nth-of-type(1) image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.left-chat-bubble{
+  width:500rpx;
+  margin:20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  box-shadow:0rpx 0rpx 14rpx rgba(0,0,0,.08);
+  border-radius:0rpx 20rpx 20rpx 20rpx;
+}
+.left-chat-bubble>text{
+  margin:5rpx 0rpx;
+  color: #5792FE;
+  font-size:0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.emphasize{
+  font-size:0.82rem;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+.emphasize:hover{
+  font-size:0.9rem;
+}
+.right-chat-bubble{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.right-chat-bubble span{
+  align-self: center;
+  color: #5792FE;
+  font-size:0.8rem;
+}
+.right-chat-bubble text{
+  margin-right: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius:40rpx 0px 40rpx 40rpx;
+  background-color: #5792FE;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  box-shadow:0rpx 0rpx 14rpx rgba(0,0,0,.08);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fixed-input{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100rpx;
+  background-color: #F5F5F5;
+}
+.fixed-input input{
+  width:70%;
+  height: 60rpx;
+  box-sizing: border-box;
+  margin-left: 30rpx;
+  padding-left: 30rpx;
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+  padding-right: 10rpx;
+  font-size:0.8rem;
+}
+.fixed-input button{
+  width: 110rpx;
+  height: 60rpx;
+  background-color: #5792FE;
+  border-radius: 10rpx;
+  color: #FFFFFF;
+  font-size: 0.6rem;
+  letter-spacing: 4rpx;
+}
